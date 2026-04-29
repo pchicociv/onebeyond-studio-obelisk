@@ -26,7 +26,7 @@
 - changing auth behavior without documenting the intent
 - adding package versions directly in project files when central package management should own them
 - treating repo-derived facts as handwritten prose instead of generating them
-- inferring “preferred” behavior from legacy code without confirming it in guidance
+- inferring "preferred" behavior from legacy code without confirming it in guidance
 
 ## Review-heavy areas
 

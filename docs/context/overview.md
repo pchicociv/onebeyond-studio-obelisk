@@ -11,23 +11,26 @@ This repository ships a repo-local Context Pack so engineers and AI tools can wo
 
 ## How to use it
 
-Read in this order:
+Default read path:
 
 1. `overview.md`
 2. `architecture.md`
 3. `_generated/repo-map.md`
-4. `_generated/dependency-inventory.md`
-5. `_generated/config-surface.md`
-6. `_generated/auth-surface.md`
-7. `feature-delivery-guide.md`
-8. `patterns-and-anti-patterns.md`
-9. `examples/create-user-flow.md`
-10. `maintenance.md`
+4. `feature-delivery-guide.md`
+5. `patterns-and-anti-patterns.md`
+
+Open when relevant:
+
+- `_generated/dependency-inventory.md`: package versions, dependency changes, or project references
+- `_generated/config-surface.md`: appsettings, configuration keys, secrets, or environment behavior
+- `_generated/auth-surface.md`: authentication setup, controller authorization, or endpoint auth surface
+- `examples/create-user-flow.md`: users, authentication, email, or password-link flows
+- `maintenance.md`: release, generator, or Context Pack maintenance work
 
 ## Generated vs handwritten
 
 Generated files live in `docs/context/_generated/`.
-Use them for facts that can be derived from the repository:
+Use them for facts that can be derived from the repository when the task touches that surface:
 
 - project layout
 - package inventory
@@ -42,6 +45,9 @@ Use them for guidance that should stay intentional:
 - preferred implementation patterns
 - AI usage boundaries
 - worked examples
+
+Template files live in `docs/context/templates/`.
+Use them only when creating project-specific context, not as default coding-session context.
 
 ## Refresh workflow
 

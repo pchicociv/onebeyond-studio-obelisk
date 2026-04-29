@@ -64,20 +64,18 @@ In the new backend repository, start with:
 1. `docs/context/overview.md`
 2. `docs/context/architecture.md`
 3. `docs/context/_generated/repo-map.md`
-4. `docs/context/_generated/dependency-inventory.md`
-5. `docs/context/_generated/config-surface.md`
-6. `docs/context/_generated/auth-surface.md`
-7. `docs/context/feature-delivery-guide.md`
+4. `docs/context/feature-delivery-guide.md`
+5. `docs/context/patterns-and-anti-patterns.md`
 
-This is the fastest way to align engineers and AI tools with the current template shape.
+This is the fastest way to align engineers and AI tools with the current template shape. Open generated dependency, configuration, and authentication inventories only when the task touches those surfaces.
 
 ## 6. Create Project-Specific AI Context
 
 Create the following files from the provided templates:
 
 ```powershell
-Copy-Item docs\context\project-profile.template.md docs\context\project-profile.md
-Copy-Item docs\context\domain-glossary.template.md docs\context\domain-glossary.md
+Copy-Item docs\context\templates\project-profile.template.md docs\context\project-profile.md
+Copy-Item docs\context\templates\domain-glossary.template.md docs\context\domain-glossary.md
 ```
 
 Then fill them in:
@@ -241,18 +239,3 @@ Use this in the new project repository after filling in the project profile and 
 ```text
 Read docs/context/overview.md, docs/context/architecture.md, docs/context/_generated/repo-map.md, docs/context/project-profile.md, and docs/context/domain-glossary.md. Summarize the current project shape, identify review-heavy areas, and scaffold the first feature following Obelisk conventions: commands in Domain, handlers in Application, thin controller in WebApi, and matching tests.
 ```
-
-## Sources
-
-- Wiki bootstrap:
-  - `D:\_Obelisk\NEMO-Pro.wiki\Obelisk\New-project-setup\Setup-and-run-Backend-(WebAPI-+-Workers).md`
-  - `D:\_Obelisk\NEMO-Pro.wiki\Obelisk\New-project-setup\Setup-and-run-Frontend-(WebUI-SPA).md`
-  - `D:\_Obelisk\NEMO-Pro.wiki\Obelisk\New-project-setup\Setup-connection-between-Frontend-and-Backend.md`
-  - `D:\_Obelisk\NEMO-Pro.wiki\Obelisk\Testing-Strategy.md`
-- Context Pack:
-  - `docs/context/overview.md`
-  - `docs/context/architecture.md`
-  - `docs/context/ai-working-agreement.md`
-  - `docs/context/configuration-and-environments.md`
-  - `docs/context/feature-delivery-guide.md`
-  - `docs/context/testing-and-quality-gates.md`

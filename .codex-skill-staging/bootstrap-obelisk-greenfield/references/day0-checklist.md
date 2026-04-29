@@ -45,22 +45,22 @@ git -C C:\dev\MangaReader.Backend push origin main
 
 ## 5. Read The Context Pack
 
-In the generated backend repo, read in this order:
+In the generated backend repo, use the default read path:
 
 1. `docs/context/overview.md`
 2. `docs/context/architecture.md`
 3. `docs/context/_generated/repo-map.md`
-4. `docs/context/_generated/dependency-inventory.md`
-5. `docs/context/_generated/config-surface.md`
-6. `docs/context/_generated/auth-surface.md`
-7. `docs/context/feature-delivery-guide.md`
+4. `docs/context/feature-delivery-guide.md`
+5. `docs/context/patterns-and-anti-patterns.md`
+
+Open generated dependency, configuration, and authentication inventories only when the task touches those surfaces.
 
 ## 6. Create Project-Specific AI Context
 
 Create:
 
-- `docs/context/project-profile.md` from `project-profile.template.md`
-- `docs/context/domain-glossary.md` from `domain-glossary.template.md`
+- `docs/context/project-profile.md` from `docs/context/templates/project-profile.template.md`
+- `docs/context/domain-glossary.md` from `docs/context/templates/domain-glossary.template.md`
 
 Fill them with:
 

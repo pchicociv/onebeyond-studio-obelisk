@@ -16,9 +16,11 @@ dotnet run --project tools/Obelisk.ContextPack -- generate-template --repo .
 - Run the solution tests.
 - Make sure `.github/copilot-instructions.md` and `AGENTS.md` still point to the correct entrypoint.
 - Keep `docs/context` focused on backend/template truth; do not let unrelated project notes accumulate here.
+- Keep empty or project-specific starting points under `docs/context/templates/` so they are not part of the default read path.
 
 ## Ownership model
 
 - Generated files are owned by the tool and refreshed from repository inputs.
 - Handwritten files are owned by template maintainers.
+- Template files are scaffolding for project-specific context and should be opened only when creating or tailoring that context.
 - Brownfield comparison output should only be committed in repositories where brownfield extraction is being used.
